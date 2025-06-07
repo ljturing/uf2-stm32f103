@@ -1,5 +1,7 @@
 # STM32F103的UF2引导程序开发
 
+[原版README](./README_en.md)
+
 本项目最初是从[DAPBoot](https://github.com/devanlai/dapboot)分支而来，但移除了DFU功能，并替换为[支持UF2](https://github.com/Microsoft/uf2)的USB大容量存储设备。
 
 安装此引导程序的开发板可以通过[MakeCode](https://maker.makecode.com)的网页界面进行编程，支持图形化编程语言或TypeScript。
