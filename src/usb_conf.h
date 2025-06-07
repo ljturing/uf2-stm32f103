@@ -28,6 +28,9 @@
 #define INTF_DFU                0
 #define INTF_MSC                1
 
+#define USB_NAME "LJTuring DFU Bootlodaer"
+#define USB_SHORT_NAME "LJTuring DFU"
+
 extern void usb_set_serial_number(const char* serial);
 extern usbd_device* usb_setup(void);
 
