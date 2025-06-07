@@ -54,6 +54,25 @@ ifeq ($(TARGET),JACDAC)
 	DEFS				+= -DHAVE_LED=1 -DLED_GPIO_PORT=GPIOB -DLED_GPIO_PIN=GPIO13 -DLED_OPEN_DRAIN=0
 endif
 
+ifeq ($(TARGET), LJTURING_APM32F103X8_16M)
+	TARGET_COMMON_DIR	:= ./stm32f103
+	TARGET_SPEC_DIR		:= ./stm32f103/ljturing/apm32f103x8_16m
+	LDSCRIPT			:= ./stm32f103/stm32f103x8.ld
+	ARCH				= STM32F1
+endif
+ifeq ($(TARGET), LJTURING_STM32F103X8_8M)
+	TARGET_COMMON_DIR	:= ./stm32f103
+	TARGET_SPEC_DIR		:= ./stm32f103/ljturing/stm32f103x8_8m
+	LDSCRIPT			:= ./stm32f103/stm32f103x8.ld
+	ARCH				= STM32F1
+endif
+ifeq ($(TARGET), LJTURING_STM32F103X8_16M)
+	TARGET_COMMON_DIR	:= ./stm32f103
+	TARGET_SPEC_DIR		:= ./stm32f103/ljturing/stm32f103x8_16m
+	LDSCRIPT			:= ./stm32f103/stm32f103x8.ld
+	ARCH				= STM32F1
+endif
+
 ifndef ARCH
 $(error Unknown target $(TARGET))
 endif

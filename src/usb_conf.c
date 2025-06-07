@@ -130,9 +130,9 @@ static char serial_number[USB_SERIAL_NUM_LENGTH+1];
 
 static const char *usb_strings[] = {
     "Devanarchy",
-    "DAPBoot DFU Bootloader",
+    USB_NAME,
     serial_number,
-    "DAPBoot DFU"
+    USB_SHORT_NAME
 };
 
 /* Buffer to be used for control requests. */
