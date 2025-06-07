@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef CONFIG_H_INCLUDED
 #define CONFIG_H_INCLUDED
 
@@ -32,3 +33,39 @@
 #define DOUBLE_TAP 1
 
 #endif
+=======
+#ifndef CONFIG_H_INCLUDED
+#define CONFIG_H_INCLUDED
+
+#define APP_BASE_ADDRESS 0x08004000
+#define FLASH_SIZE_OVERRIDE 0x20000
+#define FLASH_PAGE_SIZE 1024
+#define DFU_UPLOAD_AVAILABLE 1
+#define DFU_DOWNLOAD_AVAILABLE 1
+#define UF2_FAMILY 0x5ee21072
+
+#ifndef HAVE_LED
+#define HAVE_LED 0
+#endif
+
+#ifndef HAVE_BUTTON
+#define HAVE_BUTTON 0
+#endif
+
+#ifndef HAVE_USB_PULLUP_CONTROL
+#define HAVE_USB_PULLUP_CONTROL 0
+#endif
+
+#undef VOLUME_LABEL
+#undef PRODUCT_NAME
+#undef BOARD_ID
+
+#define VOLUME_LABEL  "LJTURING"
+#define PRODUCT_NAME  "LJTuring STM32F103xB"
+#define BOARD_ID      "STM32F103-LJTuring-R0"
+
+#undef DOUBLE_TAP
+#define DOUBLE_TAP 1
+
+#endif
+>>>>>>> 6dd58e3dd6f8fa4fd186384d76cb0449210eea06
